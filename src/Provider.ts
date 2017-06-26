@@ -1,23 +1,22 @@
 import Component from "inferno-component";
-import {render} from "alef-dom";
+import {VNode} from "inferno/core/VNodes";
 
-import {DOMRenderer} from "../../../src/types/DOMRenderer";
+import Renderer from "alef/es/Renderer";
 
 export interface IProviderProps {
-	renderer: DOMRenderer;
-
+	renderer: Renderer;
 }
 
 export default class Provider extends Component<IProviderProps, {}> {
-	getChildContext() {
+	public getChildContext() {
 		return { renderer: this.props.renderer };
 	}
 
-	componentDidMount() {
-		render(this.props.renderer);
-	}
+	// componentDidMount() {
+	// 	render(this.props.renderer);
+	// }
 
-	render() {
+	public render() {
 		return this.props.children;
 	}
 }

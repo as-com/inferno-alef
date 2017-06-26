@@ -1,4 +1,5 @@
 import Component from "inferno-component";
+import {VNode} from "inferno/core/VNodes";
 
 export interface IThemeProviderProps {
 	overwrite?: boolean;
@@ -8,7 +9,7 @@ export interface IThemeProviderProps {
 export default class ThemeProvider extends Component<IThemeProviderProps, {}> {
 	static defaultProps = { overwrite: false };
 
-	getChildContext() {
+	public getChildContext() {
 		const { overwrite, theme } = this.props;
 		const previousTheme = this.context.theme;
 
@@ -20,7 +21,7 @@ export default class ThemeProvider extends Component<IThemeProviderProps, {}> {
 		};
 	}
 
-	render() {
+	public render() {
 		return this.props.children;
 	}
 }

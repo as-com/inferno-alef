@@ -1,36 +1,42 @@
 {
-  "name": "inferno-alef",
-  "version": "0.1.0",
-  "description": "Inferno bindings for Alef",
-  "main": "lib/index.js",
-  "module": "es/index.js",
-  "jsnext:main": "es/index.js",
-  "files": [
-    "LICENSE",
-    "README.md",
-    "lib/**",
-    "es/**"
-  ],
-  "repository": "https://github.com/as-com/alef/",
-  "keywords": [
-    "alef",
-    "fela",
-    "dynamic styling",
-    "inferno",
-    "css",
-    "styling",
-    "cssinjs"
-  ],
-  "author": "Andrew Sun",
-  "license": "MIT",
-  "dependencies": {
-    "alef": "https://github.com/as-com/alef/releases/download/v0.1.0/alef-0.1.0.tgz",
-    "inferno": "^1.0.1",
-    "inferno-component": "^1.0.1",
-    "inferno-create-element": "^1.0.1",
-    "tslib": "^1.7.1"
-  },
-  "devDependencies": {
-    "typescript": "^2.3.4"
-  }
+	"name": "inferno-alef",
+	"version": "0.1.0",
+	"description": "Inferno bindings for Alef",
+	"main": "lib/index.js",
+	"module": "es/index.js",
+	"jsnext:main": "es/index.js",
+	"files": [
+		"LICENSE",
+		"README.md",
+		"lib/**",
+		"es/**"
+	],
+	"repository": "https://github.com/as-com/alef/",
+	"keywords": [
+		"alef",
+		"fela",
+		"dynamic styling",
+		"inferno",
+		"css",
+		"styling",
+		"cssinjs"
+	],
+	"author": "Andrew Sun",
+	"license": "MIT",
+	"dependencies": {
+		"tslib": "^1.7.1"
+	},
+	"peerDependencies": {
+		"alef": "^0.1.0",
+		"inferno": "^3.6.1",
+		"inferno-component": "^3.6.1",
+		"inferno-create-element": "^3.6.1"
+	},
+	"devDependencies": {
+		"typescript": "^2.3.4",
+		"inferno": "^3.6.1",
+		"inferno-component": "^3.6.1",
+		"inferno-create-element": "^3.6.1",
+		"alef": "https://github.com/as-com/alef/releases/download/v0.1.0/alef-0.1.0.tgz"
+	}
 }
