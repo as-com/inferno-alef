@@ -27,6 +27,10 @@
     "alef": "https://github.com/as-com/alef/releases/download/v0.1.0/alef-0.1.0.tgz",
     "inferno": "^1.0.1",
     "inferno-component": "^1.0.1",
-    "inferno-create-element": "^1.0.1"
+    "inferno-create-element": "^1.0.1",
+    "tslib": "^1.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^2.3.4"
   }
 }
