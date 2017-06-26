@@ -1,6 +1,6 @@
 {
 	"name": "inferno-alef",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Inferno bindings for Alef",
 	"main": "lib/index.js",
 	"module": "es/index.js",
@@ -37,6 +37,6 @@
 		"inferno": "^3.6.1",
 		"inferno-component": "^3.6.1",
 		"inferno-create-element": "^3.6.1",
-		"alef": "https://github.com/as-com/alef/releases/download/v0.1.0/alef-0.1.0.tgz"
+		"alef": "^0.1.1"
 	}
 }
