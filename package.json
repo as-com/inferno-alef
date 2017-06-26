@@ -8,10 +8,13 @@
 	"files": [
 		"LICENSE",
 		"README.md",
-		"lib/**",
-		"es/**"
+		"lib",
+		"es"
 	],
 	"repository": "https://github.com/as-com/alef/",
+	"scripts": {
+		"build": "tsc -m commonjs --outDir lib & tsc -m es2015 --outDir es"
+	},
 	"keywords": [
 		"alef",
 		"fela",
