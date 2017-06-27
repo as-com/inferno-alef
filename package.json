@@ -13,7 +13,7 @@
 	],
 	"repository": "https://github.com/as-com/alef/",
 	"scripts": {
-		"build": "tsc -m commonjs --outDir lib & tsc -m es2015 --outDir es"
+		"build": "rm -r lib es && tsc -m commonjs --outDir lib & tsc -m es2015 --outDir es"
 	},
 	"keywords": [
 		"alef",
