@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"alef@https://github.com/as-com/alef/releases/download/v0.1.0/alef-0.1.0.tgz":
-  version "0.1.0"
-  resolved "https://github.com/as-com/alef/releases/download/v0.1.0/alef-0.1.0.tgz#558207f95cf3a6ef1d3f1580d103a9951840c7f5"
+alef@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/alef/-/alef-0.1.5.tgz#8d778439da68c49978a04d37d3569846db269b7e"
   dependencies:
     css-in-js-utils "^1.0.3"
     cssbeautify "^0.3.1"
