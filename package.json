@@ -30,13 +30,13 @@
 		"tslib": "^1.7.1"
 	},
 	"peerDependencies": {
-		"alef": "^0.1.5",
+		"alef": "^0.1.6",
 		"inferno": "^3.6.1",
 		"inferno-component": "^3.6.1",
 		"inferno-create-element": "^3.6.1"
 	},
 	"devDependencies": {
-		"alef": "^0.1.5",
+		"alef": "^0.1.6",
 		"inferno": "^3.6.1",
 		"inferno-component": "^3.6.1",
 		"inferno-create-element": "^3.6.1",
