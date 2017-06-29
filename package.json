@@ -1,6 +1,6 @@
 {
 	"name": "inferno-alef",
-	"version": "0.1.1",
+	"version": "0.1.6",
 	"description": "Inferno bindings for Alef",
 	"main": "lib/index.js",
 	"module": "es/index.js",
