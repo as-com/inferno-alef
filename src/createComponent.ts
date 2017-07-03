@@ -1,6 +1,5 @@
 import Inferno from "inferno";
 import {VNode, Props, InfernoChildren, getFlagsForElementVnode} from "inferno";
-import createElement from "inferno-create-element";
 import {Rule} from "alef/es/types/Rule";
 import Renderer from "alef/es/Renderer";
 import combineRules from "alef/es/combineRules";
