@@ -29,37 +29,37 @@ hyphenate-style-name@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.2.tgz#31160a36930adaf1fc04c6074f7eb41465d4ec4b"
 
-inferno-component@3.6.1, inferno-component@^3.6.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-3.6.1.tgz#006c0f75574d395364953963d66f7149d0d48afc"
+inferno-component@3.6.4, inferno-component@^3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-3.6.4.tgz#8645383bac1965559a37d493e142295ac11731e7"
   dependencies:
-    inferno "3.6.1"
-    inferno-shared "3.6.1"
-    inferno-vnode-flags "3.6.1"
+    inferno "3.6.4"
+    inferno-shared "3.6.4"
+    inferno-vnode-flags "3.6.4"
 
-inferno-create-element@^3.6.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-3.6.1.tgz#1c1128e8778f90549d577bdd1e6f392fa7b62d08"
+inferno-create-element@^3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-3.6.4.tgz#8f53d5c7e5a74fbac0c3dac3f3eb3826fb862e96"
   dependencies:
-    inferno "3.6.1"
-    inferno-component "3.6.1"
-    inferno-shared "3.6.1"
-    inferno-vnode-flags "3.6.1"
+    inferno "3.6.4"
+    inferno-component "3.6.4"
+    inferno-shared "3.6.4"
+    inferno-vnode-flags "3.6.4"
 
-inferno-shared@3.6.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-3.6.1.tgz#d8a5e2ff4946b49bf57a05bb0127358918e28cb2"
+inferno-shared@3.6.4, inferno-shared@^3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-3.6.4.tgz#0a13e89ed45c527172d59747b31329487d5f3d7f"
 
-inferno-vnode-flags@3.6.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-3.6.1.tgz#a62cf0f67572f906db7f7702a3d353444b3f379d"
+inferno-vnode-flags@3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-3.6.4.tgz#1237612232e22fc2de0346bcb3f802edbd347cae"
 
-inferno@3.6.1, inferno@^3.6.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/inferno/-/inferno-3.6.1.tgz#4e5e73a430c49b9185d8a8a18418d87d82a665d7"
+inferno@3.6.4, inferno@^3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-3.6.4.tgz#d36dee9c895530dca0e4a03648b2530531a7aa32"
   dependencies:
-    inferno-shared "3.6.1"
-    inferno-vnode-flags "3.6.1"
+    inferno-shared "3.6.4"
+    inferno-vnode-flags "3.6.4"
 
 inline-style-prefixer@^3.0.6:
   version "3.0.6"

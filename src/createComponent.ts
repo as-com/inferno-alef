@@ -1,10 +1,12 @@
+import Inferno from "inferno";
+import {VNode, Props, InfernoChildren, getFlagsForElementVnode} from "inferno";
 import createElement from "inferno-create-element";
 import {Rule} from "alef/es/types/Rule";
 import Renderer from "alef/es/Renderer";
 import combineRules from "alef/es/combineRules";
 import resolvePassThrough from "alef/es/utils/resolvePassThrough";
 import extractPassThroughProps from "alef/es/utils/extractPassThroughProps";
-import {VNode, Props, InfernoChildren} from "inferno";
+import {isString} from "inferno-shared";
 
 export type AlefComponent<P> = ((props: P & Props & { _alefRule: any, children: InfernoChildren }, context: object) => VNode);
 
@@ -26,15 +28,20 @@ export default function createComponent<P>(rule: Rule,
 		// if the component renders into another Alef component
 		// we pass down the combinedRule as well as both
 		if ((type as any)._isAlefComponent) {
-			return createElement(
-				type,
-				{
-					_alefRule: combinedRule,
-					passThrough: resolvedPassThrough,
-					...ruleProps
-				},
-				children
-			);
+			return Inferno.createVNode(16, type, null, children, {
+				_alefRule: combinedRule,
+				passThrough: resolvedPassThrough,
+				...ruleProps
+			}, null, null, true);
+			// return createElement(
+			// 	type,
+			// 	{
+			// 		_alefRule: combinedRule,
+			// 		passThrough: resolvedPassThrough,
+			// 		...ruleProps
+			// 	},
+			// 	children
+			// );
 		}
 
 		const componentProps = extractPassThroughProps(
@@ -50,7 +57,7 @@ export default function createComponent<P>(rule: Rule,
 		const cls = ruleProps.className
 			? `${ruleProps.className} `
 			: "";
-		componentProps.className =
+		const className =
 			cls + renderer.renderRule(combinedRule, ruleProps);
 
 		if (ruleProps.id) {
@@ -62,7 +69,11 @@ export default function createComponent<P>(rule: Rule,
 		}
 
 		const customType = ruleProps.is || type;
-		return createElement(customType, componentProps, children);
+
+		const flags = isString(customType) ? getFlagsForElementVnode(customType) : 16;
+
+		return Inferno.createVNode(flags, customType, className, children, componentProps, null, null, true);
+		// return createElement(customType, componentProps, children);
 	};
 
 	(AlefComponent as any)._isAlefComponent = true;

@@ -13,7 +13,7 @@
 	],
 	"repository": "https://github.com/as-com/alef/",
 	"scripts": {
-		"build": "rm -r lib es && tsc -m commonjs --outDir lib & tsc -m es2015 --outDir es"
+		"build": "rm -r es; tsc -m es2015 --outDir es"
 	},
 	"keywords": [
 		"alef",
@@ -31,15 +31,17 @@
 	},
 	"peerDependencies": {
 		"alef": "^0.1.6",
-		"inferno": "^3.6.1",
-		"inferno-component": "^3.6.1",
-		"inferno-create-element": "^3.6.1"
+		"inferno": "^3.6.4",
+		"inferno-component": "^3.6.4",
+		"inferno-create-element": "^3.6.4",
+		"inferno-shared": "^3.6.4"
 	},
 	"devDependencies": {
 		"alef": "^0.1.6",
-		"inferno": "^3.6.1",
-		"inferno-component": "^3.6.1",
-		"inferno-create-element": "^3.6.1",
+		"inferno": "^3.6.4",
+		"inferno-component": "^3.6.4",
+		"inferno-create-element": "^3.6.4",
+		"inferno-shared": "^3.6.4",
 		"typescript": "^2.3.4"
 	}
 }
