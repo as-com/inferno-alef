@@ -1,8 +1,9 @@
 {
 	"name": "inferno-alef",
-	"version": "0.1.7",
+	"version": "0.1.10",
 	"description": "Inferno bindings for Alef",
 	"main": "es/index.js",
+	"types": "es/index.d.ts",
 	"module": "es/index.js",
 	"jsnext:main": "es/index.js",
 	"files": [
@@ -37,7 +38,7 @@
 		"inferno-shared": "^3.6.4"
 	},
 	"devDependencies": {
-		"alef": "^0.1.6",
+		"alef": "^0.1.8",
 		"inferno": "^3.6.4",
 		"inferno-component": "^3.6.4",
 		"inferno-create-element": "^3.6.4",

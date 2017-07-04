@@ -10,7 +10,7 @@ import {isString} from "inferno-shared";
 export type AlefComponent<P> = ((props: P & Props & { _alefRule: any, children: InfernoChildren }, context: object) => VNode);
 
 // TODO: Refactor to prevent polymorphism?
-export default function createComponent<P>(rule: Rule,
+export default function createComponent<P>(rule: Rule<P>,
                                         type: AlefComponent<any> | string | Function = "div",
                                         passThroughProps: (() => string[]) | string[] = []): AlefComponent<P> {
 	const displayName = typeof rule === "function" && rule.name ? rule.name : "AlefComponent";
