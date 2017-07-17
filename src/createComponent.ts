@@ -51,7 +51,7 @@ export default function createComponent<P>(rule: Rule<P>,
 			ruleProps
 		);
 
-		ruleProps.theme = theme || {};
+		// ruleProps.theme = theme || {}; // TODO: Figure out a better way to do themes and stuff
 
 		if (ruleProps.style) {
 			componentProps.style = ruleProps.style;
