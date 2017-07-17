@@ -1,6 +1,6 @@
 {
 	"name": "inferno-alef",
-	"version": "0.1.10",
+	"version": "0.1.13",
 	"description": "Inferno bindings for Alef",
 	"main": "es/index.js",
 	"types": "es/index.d.ts",
@@ -31,14 +31,14 @@
 		"tslib": "^1.7.1"
 	},
 	"peerDependencies": {
-		"alef": "^0.1.6",
+		"alef": "^0.1.13",
 		"inferno": "^3.6.4",
 		"inferno-component": "^3.6.4",
 		"inferno-create-element": "^3.6.4",
 		"inferno-shared": "^3.6.4"
 	},
 	"devDependencies": {
-		"alef": "^0.1.8",
+		"alef": "^0.1.13",
 		"inferno": "^3.6.4",
 		"inferno-component": "^3.6.4",
 		"inferno-create-element": "^3.6.4",

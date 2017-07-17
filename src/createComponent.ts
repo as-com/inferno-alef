@@ -60,7 +60,7 @@ export default function createComponent<P>(rule: Rule<P>,
 			? `${ruleProps.className} `
 			: "";
 		const className =
-			cls + renderer.renderRule(combinedRule, ruleProps);
+			cls + renderer.renderRule(combinedRule, ruleProps, context);
 
 		if (ruleProps.id) {
 			componentProps.id = ruleProps.id;
