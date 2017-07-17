@@ -15,8 +15,11 @@ export default function createComponent<P>(rule: Rule<P>,
                                         passThroughProps: (() => string[]) | string[] = []): AlefComponent<P> {
 	const displayName = typeof rule === "function" && rule.name ? rule.name : "AlefComponent";
 
-	const AlefComponent = ({children, _alefRule, ...ruleProps},
-	                       {renderer, theme}: { renderer: Renderer, theme: any }) => {
+	const AlefComponent = (ruleProps,
+	                       context: { renderer: Renderer, theme: any, [p: string]: any }) => {
+		const {children, _alefRule} = ruleProps;
+		const {renderer, theme} = context;
+
 		const combinedRule = _alefRule
 			? combineRules(rule, _alefRule)
 			: rule;
@@ -28,9 +31,9 @@ export default function createComponent<P>(rule: Rule<P>,
 		// we pass down the combinedRule as well as both
 		if ((type as any)._isAlefComponent) {
 			return Inferno.createVNode(16, type, null, children, {
+				...ruleProps,
 				_alefRule: combinedRule,
-				passThrough: resolvedPassThrough,
-				...ruleProps
+				passThrough: resolvedPassThrough
 			}, null, null, true);
 			// return createElement(
 			// 	type,
